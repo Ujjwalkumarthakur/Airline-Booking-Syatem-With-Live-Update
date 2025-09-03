@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import { useContext } from "react";
-import { AuthContext } from "../context/AuthContext";
 
 function Navbar() {
-  const { user, logout } = useContext(AuthContext);
+  // Temporary dummy user (remove once AuthContext is ready)
+  const user = null; 
+  const logout = () => alert("Logout clicked");
 
   return (
     <nav className="bg-blue-600 text-white px-6 py-3 flex justify-between items-center shadow-md">
